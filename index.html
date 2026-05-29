@@ -3,7 +3,7 @@
 
 <head>
   <title>Form Validation Practice</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <!-- Font Awesome for Icons -->
   <script src="https://kit.fontawesome.com/d8f052c6cf.js" crossorigin="anonymous"></script>
   <script src="./lab.js" defer></script>
@@ -19,30 +19,26 @@
 
       <!-- Registration Form -->
       <form id="registration">
-        <input name="username" 
-        type="text" 
-        placeholder="Username" 
-        minlength="4"
-        required
-        />
+
+        <!-- Created ID (id="reg-username") to be associated with document.getElementByID() -->
+        <input id="reg-username" name="username" type="text" placeholder="Username" minlength="4" required />
         <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-        <!-- change type="text" to type="email" -->
-        <input 
-        name="email" 
-        type="email" 
-        placeholder="Email" 
-        />
+        <!-- changed type="text" to type="email" and Created ID to be associated with document.getElementByID()-->
+        <input id="reg-email" name="email" type="email" placeholder="Email" />
         <span class="input-icon"><i class="fa-solid fa-envelope"></i></span><br />
 
-        <input name="password" type="text" placeholder="Password" />
+        <!-- Created ID (id="reg-password") to be associated with document.getElementByID() -->
+        <input id="reg-password" name="password" type="text" placeholder="Password" />
         <span class="input-icon"><i class="fa-solid fa-key"></i></span><br />
 
-        <input name="passwordCheck" type="text" placeholder="Repeat Password" />
+<!-- Created ID (id="reg-passwordCheck") to be associated with document.getElementByID() -->
+        <input id="reg-passwordCheck" name="passwordCheck" type="text" placeholder="Repeat Password" />
         <span class="input-icon"><i class="fa-solid fa-key"></i></span><br /><br />
 
+        <!-- Created ID (id="reg-passwordCheck") to be associated with document.getElementByID() -->
         <div class="flex-row">
-          <input name="terms" type="checkbox" />
+          <input id="terms" name="terms" type="checkbox" />
           <label for="terms">I agree to the&nbsp;<a href="#">Terms of Use</a>.</label>
           <input type="submit" value="Register" />
         </div>
